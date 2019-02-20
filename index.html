@@ -15,32 +15,32 @@
     <h3 id="sub-main-heading">Let us know how we can improve freeCodeCamp</h3>
 
     <div id="sub-main-container">
-      <form id="survey-form" action="">
+      <form id="survey-form" action="something.php">
 
         <div class="labels">
         <label for="name">Name</label>
         </div>
         <div class="name-email-age">
-        <input class="person-info" id="name"  type="text" name="firstname" placeholder="Your name...">
+        <input class="person-info" id="name"  type="text" name="firstname" placeholder="Your name..." required>
         </div>
         <div class="labels">
         <label for="email">Email</label>
         </div>
         <div class="name-email-age">
-        <input class="person-info" id="email" type="text" name="email" placeholder="Your email...">
+        <input class="person-info" id="email" type="text" name="email" placeholder="Your email..." required>
         </div>
         <div class="labels">
         <label for="age">Age</label>
         </div>
         <div class="name-email-age">
-        <input class="person-info" type="number" name="age" placeholder="Your age...">
+        <input class="person-info" type="number" name="age" placeholder="Your age..." required>
         </div>
 
         <div class="labels">
           <label for="role">Which option best describes your current role?</label>
         </div>
         <div class="options">
-          <select>
+          <select required>
             <option value="student">Student</option>
             <option value="fulltime">Full Time Job</option>
             <option value="part-time">Full Time Learner</option>
@@ -88,12 +88,20 @@
           <input type="checkbox" name="additional-courses" value="new-courses"><spa>Additional Courses</span>      
         </div>
 
-        
+        <div class="labels">
+          <label>Any Comments or Suggestions?</label>
+        </div>
+        <div class="options">
+          <textarea id="txtarea">Enter your comment here</textarea>
+        </div>
         
 
       </form>
+      <div id="btn-container">
+      <input id="btn" type="button" value="submit">
+      </div>
     </div>
   </div>
-  
+  <script src="main.js"></script>
 </body>
 </html>

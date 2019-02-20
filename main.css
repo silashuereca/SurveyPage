@@ -13,6 +13,7 @@ body {
 
 #main-container {
   margin: auto;
+  margin-bottom: 50px;
   width: 65%;
   height: 90%;
   background-color: white;
@@ -60,6 +61,19 @@ body {
 span {
   padding-left: 2%;
 }
+
+#btn-container {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+#btn {
+  text-align: center;
+}
+
+
 
 
 
