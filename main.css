@@ -30,5 +30,38 @@ body {
   height: 100%;
 }
 
+#survey-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3%;
+  grid-row-gap: 20px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.labels {
+  text-align: right;
+}
+
+.name-email-age {
+  text-align: left;
+}
+
+.person-info {
+  padding-right: 8em;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.options {
+  text-align: left;
+}
+
+span {
+  padding-left: 2%;
+}
+
+
+
 
 

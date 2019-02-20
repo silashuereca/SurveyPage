@@ -15,8 +15,84 @@
     <h3 id="sub-main-heading">Let us know how we can improve freeCodeCamp</h3>
 
     <div id="sub-main-container">
-      <form id="survey-form">
+      <form id="survey-form" action="">
+
+        <div class="labels">
+        <label for="name">Name</label>
+        </div>
+        <div class="name-email-age">
+        <input class="person-info" id="name"  type="text" name="firstname" placeholder="Your name...">
+        </div>
+        <div class="labels">
+        <label for="email">Email</label>
+        </div>
+        <div class="name-email-age">
+        <input class="person-info" id="email" type="text" name="email" placeholder="Your email...">
+        </div>
+        <div class="labels">
+        <label for="age">Age</label>
+        </div>
+        <div class="name-email-age">
+        <input class="person-info" type="number" name="age" placeholder="Your age...">
+        </div>
+
+        <div class="labels">
+          <label for="role">Which option best describes your current role?</label>
+        </div>
+        <div class="options">
+          <select>
+            <option value="student">Student</option>
+            <option value="fulltime">Full Time Job</option>
+            <option value="part-time">Full Time Learner</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="labels">
+          <label for="how-likely">How likely is that you would recommend freeCodeCamp to a friend?</label>
+        </div>
+        <div class="options">
+          <input type="radio" name="maybe" value="definitely"><span>Definitely</span><br>
+          <input type="radio" name="maybe" value="maybe"><span>Maybe</span><br>
+          <input type="radio" name="maybe" value="not-sure"><span>Not sure</span>
+        </div>
+
+        <div class="labels">
+          <label>What do you like most in FCC:</label>
+        </div>
+        <div class="options">
+          <select required="">
+            <option disabled="" selected="">Select your option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open-source">Open source</option>
+          </select>
+        </div>
+
+        <div class="labels">
+          <label>Things that should be improved in the future <br> (Check all that apply):</label>
+        </div>
+        <div class="options">
+          <input type="checkbox" name="fontend-projects" value="frontend"><span>Front-end Projects</span><br>
+          <input type="checkbox" name="backend-projects" value="backend-projects"><span>Back-end Projects</span><br>
+          <input type="checkbox" name="data-visualization" value="data-visualization"><span>Data Visualization</span><br>
+          <input type="checkbox" name="challenges" value="challenges"><span>Challenges</span><br>
+          <input type="checkbox" name="open-source-community" value="open-source-community"><span>Open Source Community</span><br>
+          <input type="checkbox" name="gitter-help-rooms" value="gitter-help-rooms"><span>Gitter help rooms</span><br>
+          <input type="checkbox" name="videos" value="videos"><span>Videos</span><br>
+          <input type="checkbox" name="city-meetups" value="city-meetups"><span>City Meetups</span><br>
+          <input type="checkbox" name="Wiki" value="webpage"><span>Wiki</span><br>
+          <input type="checkbox" name="Forum" value="social"><span>Forum</span><br>
+          <input type="checkbox" name="additional-courses" value="new-courses"><spa>Additional Courses</span>
+
+          
+        </div>
+
         
+        
+
       </form>
     </div>
   </div>
