@@ -17,17 +17,18 @@
     <div id="sub-main-container">
       <form id="survey-form" action="something.php">
 
+      <div id="container">
         <div class="labels">
         <label for="name">Name</label>
         </div>
         <div class="name-email-age">
-        <input class="person-info" id="name"  type="text" name="firstname" placeholder="Your name..." required>
+        <input class="person-info" id="name"  type="text" name="name" required placeholder="Your name...">
         </div>
         <div class="labels">
         <label for="email">Email</label>
         </div>
         <div class="name-email-age">
-        <input class="person-info" id="email" type="text" name="email" placeholder="Your email..." required>
+        <input class="person-info" id="email" type="email" name="email" placeholder="Your email..." required>
         </div>
         <div class="labels">
         <label for="age">Age</label>
@@ -94,6 +95,7 @@
         <div class="options">
           <textarea id="txtarea">Enter your comment here</textarea>
         </div>
+      </div>
         
 
       </form>
@@ -102,6 +104,8 @@
       </div>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
   <script src="main.js"></script>
 </body>
 </html>
