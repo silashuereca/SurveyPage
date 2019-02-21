@@ -81,10 +81,14 @@ body {
 }
 
 #txtarea {
-  width: 70%;
+  width: 80%;
   height: 70px;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 15px;
+}
+
+#txtarea:focus {
+  outline: none;
 }
 
 .checkbox {
