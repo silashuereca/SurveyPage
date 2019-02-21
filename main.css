@@ -52,13 +52,34 @@ body {
 }
 
 .person-info {
-  padding-right: 8em;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 10%;
+  overflow: visible;
+  width: 50%;
+}
+
+.person-info:focus {
+  outline: none;
 }
 
 .options {
   text-align: left;
+}
+
+.dropdown {
+  width: 40%;
+  cursor: pointer;
+  outline: none;
+}
+
+#txtarea {
+  width: 55%;
+  height: 70px;
+}
+
+.checkbox {
+  margin-top: 4%;
 }
 
 span {
@@ -67,13 +88,22 @@ span {
 
 #btn-container {
   margin: auto;
+  margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
   text-align: center;
 }
 
 #btn {
+  margin-top: 5%;
+  padding: 1% 4% 1% 4%;
   text-align: center;
+  cursor: pointer;
+  background-color: #7acfd6;
+}
+
+#btn:hover {
+  background-color: #4ba9c8;
 }
 
 

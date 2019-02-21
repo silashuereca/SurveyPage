@@ -22,7 +22,7 @@
         <label for="name">Name</label>
         </div>
         <div class="name-email-age">
-        <input class="person-info" id="name"  type="text" name="name" required placeholder="Your name...">
+        <input class="person-info" id="name"  type="text" name="firstname" placeholder="Your name..." required>
         </div>
         <div class="labels">
         <label for="email">Email</label>
@@ -34,14 +34,14 @@
         <label for="age">Age</label>
         </div>
         <div class="name-email-age">
-        <input class="person-info" type="number" name="age" placeholder="Your age..." required>
+        <input class="person-info" type="text" name="age" placeholder="Your age..." required>
         </div>
 
         <div class="labels">
           <label for="role">Which option best describes your current role?</label>
         </div>
         <div class="options">
-          <select required>
+          <select class="dropdown" required>
             <option value="student">Student</option>
             <option value="fulltime">Full Time Job</option>
             <option value="part-time">Full Time Learner</option>
@@ -63,7 +63,7 @@
           <label>What do you like most in FCC:</label>
         </div>
         <div class="options">
-          <select required="">
+          <select class="dropdown" required>
             <option disabled="" selected="">Select your option</option>
             <option value="challenges">Challenges</option>
             <option value="projects">Projects</option>
@@ -77,16 +77,16 @@
         </div>
         <div class="options">
           <input type="checkbox" name="fontend-projects" value="frontend"><span>Front-end Projects</span><br>
-          <input type="checkbox" name="backend-projects" value="backend-projects"><span>Back-end Projects</span><br>
-          <input type="checkbox" name="data-visualization" value="data-visualization"><span>Data Visualization</span><br>
-          <input type="checkbox" name="challenges" value="challenges"><span>Challenges</span><br>
-          <input type="checkbox" name="open-source-community" value="open-source-community"><span>Open Source Community</span><br>
-          <input type="checkbox" name="gitter-help-rooms" value="gitter-help-rooms"><span>Gitter help rooms</span><br>
-          <input type="checkbox" name="videos" value="videos"><span>Videos</span><br>
-          <input type="checkbox" name="city-meetups" value="city-meetups"><span>City Meetups</span><br>
-          <input type="checkbox" name="Wiki" value="webpage"><span>Wiki</span><br>
-          <input type="checkbox" name="Forum" value="social"><span>Forum</span><br>
-          <input type="checkbox" name="additional-courses" value="new-courses"><spa>Additional Courses</span>      
+          <input class="checkbox" type="checkbox" name="backend-projects" value="backend-projects"><span>Back-end Projects</span><br>
+          <input class="checkbox" type="checkbox" name="data-visualization" value="data-visualization"><span>Data Visualization</span><br>
+          <input class="checkbox" type="checkbox" name="challenges" value="challenges"><span>Challenges</span><br>
+          <input class="checkbox" type="checkbox" name="open-source-community" value="open-source-community"><span>Open Source Community</span><br>
+          <input class="checkbox" type="checkbox" name="gitter-help-rooms" value="gitter-help-rooms"><span>Gitter help rooms</span><br>
+          <input class="checkbox" type="checkbox" name="videos" value="videos"><span>Videos</span><br>
+          <input class="checkbox" type="checkbox" name="city-meetups" value="city-meetups"><span>City Meetups</span><br>
+          <input class="checkbox" type="checkbox" name="Wiki" value="webpage"><span>Wiki</span><br>
+          <input class="checkbox" type="checkbox" name="Forum" value="social"><span>Forum</span><br>
+          <input class="checkbox" type="checkbox" name="additional-courses" value="new-courses"><spa>Additional Courses</span>      
         </div>
 
         <div class="labels">
@@ -96,16 +96,14 @@
           <textarea id="txtarea">Enter your comment here</textarea>
         </div>
       </div>
+
+        <div id="btn-container">
+          <button id="btn">Submit</button>
+        </div>
         
 
       </form>
-      <div id="btn-container">
-      <input id="btn" type="button" value="submit">
-      </div>
-    </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
   <script src="main.js"></script>
 </body>
 </html>
