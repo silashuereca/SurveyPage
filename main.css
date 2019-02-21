@@ -67,6 +67,10 @@ body {
   text-align: left;
 }
 
+.radio {
+  margin-top: 4%;
+}
+
 .dropdown {
   width: 40%;
   cursor: pointer;
@@ -76,6 +80,7 @@ body {
 #txtarea {
   width: 55%;
   height: 70px;
+  border-radius: 5px;
 }
 
 .checkbox {
@@ -100,12 +105,42 @@ span {
   text-align: center;
   cursor: pointer;
   background-color: #7acfd6;
+  border-radius: 4px;
 }
 
 #btn:hover {
   background-color: #4ba9c8;
 }
 
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  #main-container {
+    margin: auto;
+    margin-bottom: 50px;
+    width: 90%;
+    height: 90%;
+  }
+
+  #container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 3%;
+    grid-row-gap: 20px;
+  }
+
+  .labels {
+    text-align: left;
+  }
+
+  #txtarea {
+    width: 100%;
+  }
+  
+  .dropdown {
+    width: 100%;
+  }
+
+}
 
 
 
